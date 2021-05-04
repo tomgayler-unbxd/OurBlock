@@ -1,0 +1,49 @@
+{% extends "layout.html" %} {% block pageTitle %} Question page {% endblock %} {% block beforeContent %}
+<a class="govuk-back-link" href="/url/of/previous/page">Back</a> {% endblock %} {% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <form class="form" action="/juggling-trick" method="post">
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                            How many balls can you juggle?
+                        </h1>
+                    </legend>
+                    <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-many-balls" name="how-many-balls" type="radio" value="3 or More">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                        3 or more
+                      </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-many-balls-2" name="how-many-balls" type="radio" value="1 or 2">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        1 or 2
+                      </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="how-many-balls-3" name="how-many-balls" type="radio" value="None">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                        None
+                      </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
