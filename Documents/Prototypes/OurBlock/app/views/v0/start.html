@@ -1,0 +1,62 @@
+start.html {% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">
+            Welcome to Our Block
+        </h1>
+        <p class="govuk-body-l">
+            13 Marylebone Road</p>
+        <ul class=" govuk-list ">
+            <li>
+                <a href="# ">Report an new issue </a>
+            </li>
+            <li>
+                <a href="# ">Propose a new idea </a>
+            </li>
+        </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+        <table class="govuk-table ">
+            <caption class="govuk-table__caption govuk-table__caption--m ">Current ideas and issues</caption>
+            <thead class="govuk-table__head ">
+                <tr class="govuk-table__row ">
+                    <th scope="col " class="govuk-table__header ">Type</th>
+                    <th scope="col " class="govuk-table__header ">Detail</th>
+                    <th scope="col " class="govuk-table__header ">Status</th>
+                    <th scope="col " class="govuk-table__header ">Action</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body ">
+                <tr class="govuk-table__row ">
+                    <td class="govuk-table__cell ">Idea</td>
+                    <td class="govuk-table__cell ">Plant new flowers in the beds outside the entrance to the building</td>
+                    <td class="govuk-table__cell "><strong class="govuk-tag ">
+                        voting in progress
+                      </strong></td>
+                    <td class="govuk-table__cell "><a href="# ">Vote</a></td>
+                </tr>
+                <tr class="govuk-table__row ">
+                    <td class="govuk-table__cell ">Issue</td>
+                    <td class="govuk-table__cell ">Leak in the 2nd floor hallway between no11. and no12.</td>
+                    <td class="govuk-table__cell "><strong class="govuk-tag ">
+                        management responded
+                      </strong></td>
+                    <td class="govuk-table__cell "><a href="# ">View</a></td>
+                </tr>
+                <tr class="govuk-table__row ">
+                    <td class="govuk-table__cell ">Issue</td>
+                    <td class="govuk-table__cell ">No rubbish collections last week (March 12th)</td>
+                    <td class="govuk-table__cell "><strong class="govuk-tag govuk-tag--red ">
+                        No response
+                      </strong></td>
+                    <td class="govuk-table__cell ">
+                        <a href="# ">View</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+{% endblock %}
